@@ -1,7 +1,17 @@
 @font-face {
-  font-family: 'Metropolis';
-  src: url('font/Metropolis-Regular');
+  font-family: "Metropolis";
+  src: url("Metropolis-Light.ttf") format("truetype"),
+    url("Metropolis-Light.woff") format("woff");
+  font-weight: normal;
 }
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("Metropolis-Medium.ttf") format("truetype"),
+    url("Metropolis-Medium.woff") format("woff");
+  font-weight: bold;
+}
+
 
 h1,
 h2,
@@ -24,7 +34,8 @@ h6 {
 }
 
 .section p {
-  font-family: 'Metropolis';
+  font-family: Metropolis,Arial,sans-serif,-apple-system;
   line-height: 26px;
   color: #5c5a5a;
+  font-size: 1.2em;
 }
