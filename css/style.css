@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Metropolis';
+  src: url('font/Metropolis-Regular');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display';
+  color: #212529;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 auto;
+}
+
+.section-title__center {
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+}
+
+.section p {
+  font-family: 'Metropolis';
+  line-height: 26px;
+  color: #5c5a5a;
+}
