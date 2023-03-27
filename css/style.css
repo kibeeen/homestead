@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Metropolis";
-  src: url("Metropolis-Light.ttf") format("truetype"),
-    url("Metropolis-Light.woff") format("woff");
+  src: url("../fonts/Metropolis-Light.ttf") format("truetype"),
+    url("../fonts/Metropolis-Light.woff") format("woff");
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Metropolis";
-  src: url("Metropolis-Medium.ttf") format("truetype"),
-    url("Metropolis-Medium.woff") format("woff");
+  src: url("../fonts/Metropolis-Medium.ttf") format("truetype"),
+    url("../fonts/Metropolis-Medium.woff") format("woff");
   font-weight: bold;
 }
 
@@ -19,9 +19,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Playfair Display';
+  font-family: 'Playfair Display', sans-serif;
   color: #212529;
-  font-size: 48px;
   font-weight: 700;
   line-height: 1.2;
   margin: 0 auto;
@@ -33,9 +32,77 @@ h6 {
   text-transform: capitalize;
 }
 
-.section p {
-  font-family: Metropolis,Arial,sans-serif,-apple-system;
+.section p,
+.section ul li {
+  font-family: Metropolis, Arial, sans-serif, -apple-system;
   line-height: 26px;
   color: #5c5a5a;
   font-size: 1.2em;
+}
+
+.section row {
+  display: flex;
+}
+
+.hero-img {
+  width: 80%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.headline-hero {
+  display: flex;
+  justify-content: center;
+}
+
+.headline-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-homestead {
+  font-family: 'Metropolis', sans-serif, Arial;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px 50px;
+  border: 2px solid #212529;
+  color: #fff;
+  background: #212529;
+  transition: all .3s ease;
+}
+
+.btn-homestead:hover {
+  font-family: 'Metropolis', sans-serif, Arial;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px 50px;
+  border: 2px solid #212529;
+  color: #212529;
+  background: #fff;
+  transition: all .3s ease;
+}
+
+
+.logos {
+  height: 35px;
+}
+
+.testi-logo-img {
+  height: 45px;
+}
+
+.container {
+  padding: 60px 20px 60px;
+}
+
+.video-testimonial-container {
+  display: flex;
+  justify-content: center;
+}
+
+.testi-comment p {
+  font-style: italic;
 }
