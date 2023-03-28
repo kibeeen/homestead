@@ -111,25 +111,31 @@ h6 {
 
 /* // Small devices (landscape phones, 576px and up) */
 
-@media (min-width: 576px) {
+@media (min-width: 325px) {
+  .row>.col-sm {
+    margin-bottom: 30px;
+  }
 
+
+  .headline-content .headline-content-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .container {
+    padding: 40px 20px 40px;
+  }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 
-@media (min-width: 768px) {
+@media (min-width: 768px) {}
 
-
-}
 /* // Large devices (desktops, 992px and up) */
 
-@media (min-width: 992px) {
-
-}
+@media (min-width: 992px) {}
 
 /* // Extra large devices (large desktops, 1200px and up) */
 
-@media (min-width: 1200px) {
-
-
-}
+@media (min-width: 1200px) {}
