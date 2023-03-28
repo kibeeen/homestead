@@ -19,11 +19,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Playfair Display';
   color: #212529;
   font-weight: 700;
   line-height: 1.2;
-  margin: 0 auto;
 }
 
 .section-title__center {
@@ -35,13 +34,34 @@ h6 {
 .section p,
 .section ul li {
   font-family: Metropolis, Arial, sans-serif, -apple-system;
-  line-height: 26px;
+  line-height: 1.2;
   color: #5c5a5a;
   font-size: 1.2em;
 }
 
+.row > .col-sm {
+  margin-bottom: 20px;
+}
+
 .section row {
   display: flex;
+}
+
+.col-sm:last-child, .col-sm-12:last-child {
+  margin-bottom: 0;
+}
+
+.container {
+  padding: 60px 20px 60px;
+}
+
+
+
+/* HEADLINE */
+
+.headline-hero {
+  display: flex;
+  justify-content: center;
 }
 
 .hero-img {
@@ -51,16 +71,13 @@ h6 {
   overflow: hidden;
 }
 
-.headline-hero {
-  display: flex;
-  justify-content: center;
-}
-
 .headline-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
+/* CTA */
 
 .btn-homestead {
   font-family: 'Metropolis', sans-serif, Arial;
@@ -87,17 +104,27 @@ h6 {
 }
 
 
-.logos {
+/* LOGO */
+
+#logo-bar {
+  background-color: #e5f6ff;
+}
+
+.logo {
   height: 35px;
 }
 
-.testi-logo-img {
-  height: 45px;
+.logos-container {
+  display: flex;
+  justify-content: center;
 }
 
-.container {
-  padding: 60px 20px 60px;
-}
+
+
+
+
+
+/* TESTIMONIALS */
 
 .video-testimonial-container {
   display: flex;
@@ -108,14 +135,95 @@ h6 {
   font-style: italic;
 }
 
+.testi-logo-img {
+  height: 45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* // Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 325px) {
-  .row>.col-sm {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
     margin-bottom: 30px;
+    line-height: 1.2em;
   }
 
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  
+
+  .btn-homestead {
+    width: 100%;
+  }
+
+  .container {
+    padding: 40px 20px;
+  }
+
+
+
+
+  /* HEADLINE SECTION */
 
   .headline-content .headline-content-cta {
     display: flex;
@@ -123,9 +231,25 @@ h6 {
     margin-top: 20px;
   }
 
-  .container {
-    padding: 40px 20px 40px;
+  #headline-complex ul li {
+    font-size: 17px;
+    line-height: 1.3em;
+    margin-bottom: 7px;
   }
+
+
+  /* LOGO SECTION */
+
+  .logos-container {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .logo {
+    height: 30px;
+    margin: 22px;
+  }
+
 }
 
 /* // Medium devices (tablets, 768px and up) */
