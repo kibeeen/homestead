@@ -85,7 +85,7 @@
     <div id="logo-bar" class="section">
       <div class="container">
         <div class="row justify-content-center">
-          <h2>Sed ut perspiciatis unde omnis iste</h2>
+          <h2 class="section-title__center">Sed ut perspiciatis unde omnis iste</h2>
         </div>
 
         <div class="row justify-content-center">
@@ -116,7 +116,7 @@
         <div class="row justify-content-center p-3">
 
           <!-- LEFT COLUMN - VIDEO -->
-          <div class="col-12 col-sm col-video">
+          <div class="col-12 col-md-6 col-sm col-video">
             <div class="video-testi-container">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
                 title="YouTube video player" frameborder="0"
@@ -126,14 +126,17 @@
           </div>
 
           <!-- RIGHT COLUMN - CONTENT -->
-          <div class="col-12 col-sm">
-            <p>"Sed ut perspiciatis unde omnis iste natus error sit"</p>
-            <p>voluptatem accusantium...</p>
-            <ul>
-              <li>architecto beatae vitae dicta sunt explicabo</li>
-              <li>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</li>
-              <li>aut odit aut fugit, sed quia consequuntur magni dolores eos</li>
-            </ul>
+          <div class="col-12 col-md-6 col-sm">
+            <div class="testi-content-container">
+              <p>"Sed ut perspiciatis unde omnis iste natus error sit"</p>
+              <p>voluptatem accusantium...</p>
+              <ul>
+                <li>architecto beatae vitae dicta sunt explicabo</li>
+                <li>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</li>
+                <li>aut odit aut fugit, sed quia consequuntur magni dolores eos</li>
+              </ul>
+            </div>
+            
           </div>
         </div>
 
@@ -216,11 +219,14 @@
     <div id="features" class="section">
       <div class="container">
 
-        <!-- 1ST ROW - HEADLINE -->
+        <!-- 1ST ROW - HEADLINE  -->
         <div class="row justify-content-center row-features-content">
-          <h2 class="section-title__center">vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</h2>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
-            atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          <div class="features-content">
+            <h2 class="section-title__center">vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+              atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+
         </div>
 
         <!-- 2ND ROW - FEATURES -->
@@ -230,7 +236,8 @@
             <div class="col-md-6 col-sm-12">
               <div class="features-card">
                 <div class="features-icon">
-                  <img src="imgs/icons/trophy.svg">
+                  <img src="imgs/icons/trophy.svg" class="features-icon-svg">
+                  <img src="imgs/icons/irregular-circles/bg-1.svg" class="features-icon-bg">
                 </div>
                 <div class="features-meta">
                   <h4 class="features-content-title">
@@ -247,7 +254,8 @@
             <div class="col-md-6 col-sm-12">
               <div class="features-card">
                 <div class="features-icon">
-                  <img src="imgs/icons/boost-sales.svg">
+                  <img src="imgs/icons/boost-sales.svg" class="features-icon-svg">
+                  <img src="imgs/icons/irregular-circles/bg-2.svg" class="features-icon-bg">
                 </div>
                 <div class="features-meta">
                   <h4 class="features-content-title">
@@ -265,7 +273,8 @@
             <div class="col-md-6 col-sm-12">
               <div class="features-card">
                 <div class="features-icon">
-                  <img src="imgs/icons/ideas.svg">
+                  <img src="imgs/icons/ideas.svg" class="features-icon-svg">
+                  <img src="imgs/icons/irregular-circles/bg-4.svg" class="features-icon-bg">
                 </div>
                 <div class="features-meta">
                   <h4 class="features-content-title">
@@ -283,7 +292,8 @@
             <div class="col-md-6 col-sm-12">
               <div class="features-card">
                 <div class="features-icon">
-                  <img src="imgs/icons/responsive.svg">
+                  <img src="imgs/icons/responsive.svg" class="features-icon-svg">
+                  <img src="imgs/icons/irregular-circles/bg-3.svg" class="features-icon-bg">
                 </div>
                 <div class="features-meta">
                   <h4 class="features-content-title">
@@ -387,17 +397,17 @@
 
                     <!-- ACCORDION 1-3 - TITLE -->
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                      <h2 class="accordion-header" id="accordion-1-3-title">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                          aria-controls="panelsStayOpen-collapseThree">
+                          data-bs-target="#accordion-1-3-content" aria-expanded="false"
+                          aria-controls="accordion-1-3-content">
                           do eiusmod tempor
                         </button>
                       </h2>
 
                       <!-- ACCORDION 1-3 - CONTENT -->
-                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingThree">
+                      <div id="accordion-1-3-content" class="accordion-collapse collapse"
+                        aria-labelledby="accordion-1-3-title">
                         <div class="accordion-body">
                           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                             commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -418,7 +428,7 @@
 
           <!-- STEP 2 -->
           <div class="steps-card">
-            <h3>Step 1</h3>
+            <h3>Step 2</h3>
             <div class="row justify-content-center">
               <div class="col-md-6 col-sm-12">
                 <div class="steps-content">
@@ -430,17 +440,21 @@
 
               <div class="col-md-6 col-sm-12">
                 <div class="steps-accordion">
-                  <div class="accordion" id="accordionPanelsStayOpenExample">
+
+                  <!-- ACCORDION 2-1 - TITLE -->
+                  <div class="accordion">
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                          aria-controls="panelsStayOpen-collapseOne">
+                      <h2 class="accordion-header" id="accordion-2-1-title">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#accordion-2-1-content" aria-expanded="false"
+                          aria-controls="accordion-2-1-content">
                           Lorem ipsum dolor
                         </button>
                       </h2>
-                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                        aria-labelledby="panelsStayOpen-headingOne">
+
+                      <!-- ACCORDION 2-1 - CONTENT -->
+                      <div id="accordion-2-1-content" class="accordion-collapse collapse"
+                        aria-labelledby="accordion-2-1-title">
                         <div class="accordion-body">
                           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                             commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -450,16 +464,20 @@
                         </div>
                       </div>
                     </div>
+
+                    <!-- ACCORDION 2-2 - TITLE -->
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                      <h2 class="accordion-header" id="accordion-2-2-title">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                          aria-controls="panelsStayOpen-collapseTwo">
+                          data-bs-target="#accordion-2-2-content" aria-expanded="false"
+                          aria-controls="accordion-2-2-content">
                           consectetur adipiscing elit
                         </button>
                       </h2>
-                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingTwo">
+
+                      <!-- ACCORDION 2-2 - CONTENT -->
+                      <div id="accordion-2-2-content" class="accordion-collapse collapse"
+                        aria-labelledby="accordion-2-2-title">
                         <div class="accordion-body">
                           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                             commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -469,16 +487,21 @@
                         </div>
                       </div>
                     </div>
+
+
+                    <!-- ACCORDION 2-3 - TITLE -->
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                      <h2 class="accordion-header" id="accordion-2-3-title">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                          aria-controls="panelsStayOpen-collapseThree">
+                          data-bs-target="#accordion-2-3-content" aria-expanded="false"
+                          aria-controls="accordion-2-3-content">
                           do eiusmod tempor
                         </button>
                       </h2>
-                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingThree">
+
+                      <!-- ACCORDION 2-3 - CONTENT -->
+                      <div id="accordion-2-3-content" class="accordion-collapse collapse"
+                        aria-labelledby="accordion-2-3">
                         <div class="accordion-body">
                           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                             commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -499,7 +522,7 @@
 
           <!-- STEP 3 -->
           <div class="steps-card">
-            <h3>Step 1</h3>
+            <h3>Step 3</h3>
             <div class="row justify-content-center">
               <div class="col-md-6 col-sm-12">
                 <div class="steps-content">
@@ -511,17 +534,21 @@
 
               <div class="col-md-6 col-sm-12">
                 <div class="steps-accordion">
-                  <div class="accordion" id="accordionPanelsStayOpenExample">
+
+                  <!-- ACCORDION 3-1 - TITLE -->
+                  <div class="accordion">
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                          aria-controls="panelsStayOpen-collapseOne">
+                      <h2 class="accordion-header" id="accordion-3-1-title">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#accordion-3-1-content" aria-expanded="false"
+                          aria-controls="accordion-3-1-content">
                           Lorem ipsum dolor
                         </button>
                       </h2>
-                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                        aria-labelledby="panelsStayOpen-headingOne">
+
+                      <!-- ACCORDION 3-1 - CONTENT -->
+                      <div id="accordion-3-1-content" class="accordion-collapse collapse"
+                        aria-labelledby="accordion-3-1-title">
                         <div class="accordion-body">
                           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                             commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -531,16 +558,20 @@
                         </div>
                       </div>
                     </div>
+
+                    <!-- ACCORDION 3-2 - TITLE -->
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                      <h2 class="accordion-header" id="accordion-3-2-title">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                          aria-controls="panelsStayOpen-collapseTwo">
+                          data-bs-target="#accordion-3-2-content" aria-expanded="false"
+                          aria-controls="accordion-3-2-content">
                           consectetur adipiscing elit
                         </button>
                       </h2>
-                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingTwo">
+
+                      <!-- ACCORDION 3-2 - CONTENT -->
+                      <div id="accordion-3-2-content" class="accordion-collapse collapse"
+                        aria-labelledby="accordion-3-2-title">
                         <div class="accordion-body">
                           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                             commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -550,16 +581,21 @@
                         </div>
                       </div>
                     </div>
+
+
+                    <!-- ACCORDION 3-3 - TITLE -->
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                      <h2 class="accordion-header" id="accordion-3-3-title">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                          aria-controls="panelsStayOpen-collapseThree">
+                          data-bs-target="#accordion-3-3-content" aria-expanded="false"
+                          aria-controls="accordion-3-3-content">
                           do eiusmod tempor
                         </button>
                       </h2>
-                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingThree">
+
+                      <!-- ACCORDION 3-3 - CONTENT -->
+                      <div id="accordion-3-3-content" class="accordion-collapse collapse"
+                        aria-labelledby="accordion-3-3-title">
                         <div class="accordion-body">
                           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                             commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
