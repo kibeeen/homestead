@@ -717,6 +717,12 @@ h6 {
     margin-top: 80px;
   }
 
+  .row-checkbox .input-required {
+    left: 150px;
+    top: 60%;
+    transform: translateY(-50%);
+  }
+
 
 
 
@@ -860,6 +866,20 @@ h6 {
 
 
 
+
+}
+
+
+
+
+
+@media (min-width: 576px) {
+
+  .row-checkbox .input-required {
+    left: 365px;
+    top: 30%;
+    transform: translateY(-50%);
+  }
 
 }
 
