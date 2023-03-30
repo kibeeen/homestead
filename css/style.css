@@ -21,7 +21,7 @@ h5,
 h6 {
   font-family: 'Playfair Display';
   color: #212529;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2;
 }
 
@@ -105,10 +105,12 @@ h6 {
 }
 
 
+
+
 /* LOGO */
 
 #logo-bar {
-  background-color: #F5F5F5;
+  background-color: #eef6ff;
 }
 
 .logo {
@@ -188,7 +190,7 @@ h6 {
 /* FEATURES SECTION */
 
 #features {
-  background-color: #f2f2f2;
+  background-color: #fffefb;
 }
 
 .row-features-content {
@@ -327,6 +329,22 @@ h6 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* // Small devices (landscape phones, 325px and up) */
 
 @media (min-width: 325px) {
@@ -361,6 +379,42 @@ h6 {
   }
 
 
+  .btn-homestead-contact {
+    font-family: 'Public Sans', sans-serif, Arial;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    height: 32px;
+    padding: 0px 12px;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    background: rgb(0, 0, 0);
+    outline: none;
+    transition: color 100ms ease-in 0s;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+
+  .btn-homestead-contact:hover {
+    opacity: 0.75;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+  }
+
+  .btn-homestead-contact svg {
+    height: 14px;
+    width: 14px;
+    fill: white;
+    margin-left: 10px;
+  }
+
+
 
 
   /* HEADLINE SECTION */
@@ -377,12 +431,17 @@ h6 {
     margin-bottom: 7px;
   }
 
+  #headline-complex h3 {
+    font-weight: 400;
+  }
+
 
   /* LOGO SECTION */
 
   .logos-container {
     flex-wrap: wrap;
     align-items: center;
+
   }
 
   .logo {
@@ -437,6 +496,11 @@ h6 {
     margin-bottom: 20px;
   }
 
+  .steps-container:last-child,
+  .steps-card:last-child {
+    margin-bottom: 0;
+  }
+
   .row-steps {
     margin-bottom: 20px;
   }
@@ -452,6 +516,223 @@ h6 {
   #process .steps-content p {
     font-size: 1.1em;
   }
+
+
+
+
+
+
+  /* CONTACT FORM SECTION */
+
+  #contact-form * {
+    font-family: 'Public Sans', 'Metropolis';
+    line-height: 1.3;
+  }
+
+  #contact-form p {
+    font-size: 16px;
+    color: #888888;
+
+  }
+
+  #contact-form .row>* {
+    padding-right: calc(var(--bs-gutter-x) * .2);
+    padding-left: calc(var(--bs-gutter-x) * .2);
+  }
+
+  .input-group-homestead .checkbox {
+    display: inline-flex;
+  }
+
+  .input-homestead {
+    height: 36px;
+    padding: 0px 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgba(61, 59, 53, 0.16) 0px 0px 0px 1px, rgba(61, 59, 53, 0.08) 0px 2px 5px 0px;
+    border: 0px;
+    border-radius: 5px;
+    outline: none;
+    background-color: #ffffff;
+    color: #37352f;
+    caret-color: #37352f;
+  }
+
+
+
+  .checkbox-homestead {
+
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #ffffff;
+    appearance: none;
+    opacity: 1;
+    min-width: 20px;
+    min-height: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgba(61, 59, 53, 0.16) 0px 0px 0px 1px, rgba(61, 59, 53, 0.08) 0px 2px 5px 0px;
+
+  }
+
+  .textarea-homestead {
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgba(61, 59, 53, 0.16) 0px 0px 0px 1px, rgba(61, 59, 53, 0.08) 0px 2px 5px 0px;
+    border: 0px;
+    border-radius: 5px;
+    outline: none;
+    background-color: #ffffff;
+    color: #37352f;
+    caret-color: #37352f;
+  }
+
+  .input-homestead::placeholder,
+  .textarea-homestead::placeholder {
+    color: #C0BFBD;
+  }
+
+  .input-group-homestead {
+    position: relative;
+    align-items: center;
+    display: flex;
+  }
+
+  .input-required {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+    color: #37352f;
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -8px;
+    right: 0;
+  }
+
+
+  .input-required span {
+    top: 1px;
+    position: absolute;
+  }
+
+  #contact-form .row>.col-sm {
+    margin-bottom: 12px;
+  }
+
+  .form-input-container span:first-of-type {
+    font-weight: 800;
+    font-size: 16px;
+
+  }
+
+  .form-input-title {
+    padding: 3px 0 8px 0;
+    margin-bottom: 3px;
+  }
+
+  .form-input-container h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #37352f;
+    text-align: left;
+  }
+
+  .features-content {
+
+    margin-bottom: 40px;
+
+  }
+
+  .form-input-container {
+    margin-bottom: 25px;
+  }
+
+  .checkbox-label {
+    margin-left: 16px;
+    position: relative;
+    top: 2px;
+    color: #37352f;
+  }
+
+  #contact-form .section-title__center {
+    font-family: 'Playfair Display', serif;
+    color: #212529;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0;
+    z-index: 2;
+    position: relative;
+  }
+
+  #contact-form .contact-title-container {
+    position: relative;
+  }
+
+  .contact-icon-bg {
+    width: 100%;
+    height: 100px;
+    top: -20px;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .contact-header {
+    margin-top: 80px;
+  }
+
+
+
+
+  /* HEADER NAV */
+
+  #header-nav .container {
+    padding: 0 10px;
+  }
+
+  #header-nav {
+    height: 100%;
+    padding: 10px 0;
+  }
+
+  .header-nav-logo {
+    height: 55px;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -496,20 +777,18 @@ h6 {
     margin-bottom: 30px;
   }
 
-  .steps-card {
-    padding: 0 30px;
-  }
 }
 
 /* // Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
 
+
   .testi-content-container {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    padding: 15px 20px;
+    padding: 15px 33px;
   }
 
   .testi-comment {
@@ -522,7 +801,7 @@ h6 {
   }
 
   #features .container {
-    padding: 40px 100px;
+    padding: 40px 80px;
   }
 
   #headline-complex .container>.row>.col-12 {
@@ -535,11 +814,142 @@ h6 {
     align-items: center;
   }
 
-
-
   .hero-img {
-    width: 70%;
+    width: 85%;
   }
+
+  .contact-header {
+    margin-top: 210px;
+  }
+
+  #contact-form {
+    margin-top: 120px;
+  }
+
+  .row-contact {
+    margin-bottom: 40px;
+  }
+
+  #contact-form .container {
+    padding: 40px 120px;
+  }
+
+  #header-nav .container {
+    padding: 0 15px;
+  }
+
+  #headline-complex {
+    height: 80vh;
+    display: flex;
+  }
+
+
+  #headline-complex .container {
+    display: flex;
+  }
+
+  #logo-bar {
+    height: 60vh;
+    display: flex;
+  }
+
+  #logo-bar .container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-title__center {
+    margin-bottom: 4rem;
+    padding: 0 15%;
+  }
+
+  #headline-complex ul li {
+    font-size: 17px;
+    line-height: 1.75em;
+  }
+
+  #testimonials,
+  #features {
+    padding: 10% 0px;
+  }
+
+  #headline-complex h3 {
+    font-size: 30px;
+    text-align: left;
+    font-weight: 400;
+    font-family: 'Metropolis';
+    line-height: 1.5em;
+  }
+
+  .features-card {
+    text-align: center;
+    padding: 0 55px;
+    margin-bottom: 100px;
+  }
+
+  #testimonials .container .row {
+    margin-bottom: 70px;
+  }
+
+  #testimonials p, #testimonials li {
+    line-height: 1.75em;
+    font-size: 1.1em;
+  }
+
+  #testimonials .col-video {
+    margin: auto;
+  }
+
+  #features p {
+    line-height: 2em;
+  }
+
+  .features-icon img {
+    height: 100px;
+  }
+
+  #features .features-content-desc p {
+    line-height: 2em;
+  }
+
+  .features-icon {
+    margin-bottom: 35px;
+  }
+
+  .testi-comment p {
+    font-size: 1.1em;
+    line-height: 1.75em;
+  }
+
+
+  .testi-comment {
+    min-height: 180px;
+  }
+
+  .ceo-brand-logo {
+    height: 25px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -592,8 +1002,11 @@ h6 {
 
   .logo {
     height: 35px
-}
+  }
 
+  .container {
+    max-width: 930px;
+  }
 
 
 

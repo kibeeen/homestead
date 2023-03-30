@@ -9,19 +9,21 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="imgs/favicon.png">
-
   <!-- Playfair font CDN -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap"
+    rel="stylesheet">
 
-  <!-- Metropolis font CDN -->
-
+  <!-- Public Sans font CDN -->
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
   <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
   <!-- Local CSS styling -->
@@ -32,6 +34,18 @@
 <body>
 
   <div id="body-wrapper">
+
+    <!-- HEADER NAV SECTION -->
+    <div id="header-nav">
+      <div class="container header-container">
+        <div class="header-logo">
+          <img src="imgs/logos/home-stead-logo.svg" class="header-nav-logo">
+        </div>
+        <div class="header-burger">
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+    </div>
 
 
     <!-- HEADLINE SECTION -->
@@ -136,7 +150,7 @@
                 <li>aut odit aut fugit, sed quia consequuntur magni dolores eos</li>
               </ul>
             </div>
-            
+
           </div>
         </div>
 
@@ -236,7 +250,7 @@
             <div class="col-md-6 col-sm-12">
               <div class="features-card">
                 <div class="features-icon">
-                  <img src="imgs/icons/trophy.svg" class="features-icon-svg">
+                  <img src="imgs/icons/email-2.svg" class="features-icon-svg">
                   <img src="imgs/icons/irregular-circles/bg-1.svg" class="features-icon-bg">
                 </div>
                 <div class="features-meta">
@@ -254,8 +268,8 @@
             <div class="col-md-6 col-sm-12">
               <div class="features-card">
                 <div class="features-icon">
-                  <img src="imgs/icons/boost-sales.svg" class="features-icon-svg">
-                  <img src="imgs/icons/irregular-circles/bg-2.svg" class="features-icon-bg">
+                  <img src="imgs/icons/ideas.svg" class="features-icon-svg">
+                  <img src="imgs/icons/irregular-circles/bg-4.svg" class="features-icon-bg">
                 </div>
                 <div class="features-meta">
                   <h4 class="features-content-title">
@@ -273,8 +287,8 @@
             <div class="col-md-6 col-sm-12">
               <div class="features-card">
                 <div class="features-icon">
-                  <img src="imgs/icons/ideas.svg" class="features-icon-svg">
-                  <img src="imgs/icons/irregular-circles/bg-4.svg" class="features-icon-bg">
+                  <img src="imgs/icons/boost-sales.svg" class="features-icon-svg">
+                  <img src="imgs/icons/irregular-circles/bg-2.svg" class="features-icon-bg">
                 </div>
                 <div class="features-meta">
                   <h4 class="features-content-title">
@@ -618,11 +632,189 @@
       </div>
     </div>
 
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-    crossorigin="anonymous"></script>
+    <!-- CONTACT FORM SECTION -->
+    <div id="contact-form" class="section">
+      <div class="container">
+
+        <!-- 1ST ROW - HEADLINE  -->
+        <div class="row justify-content-center row-contact">
+          <div class="contact-title-container">
+            <h2 class="section-title__center">Contact Us</h2>
+            <img src="imgs/icons/irregular-circles/bg-4.svg" class="contact-icon-bg">
+          </div>
+          <div class="contact-header">
+            <p>Homestead Studio is an eCommerce growth marketing agency specialized in scaling 7-9 figure brands in the
+              post-iOS14 era.</p>
+            <p>
+              We look forward to connecting after learning more about your business.</p>
+          </div>
+        </div>
+
+
+        <!-- YOUR INFORMATION -->
+        <div class="form-input-container">
+          <div class="row">
+            <div class="col-12 form-input-title">
+              <span>Your Information</span>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-md-6 col-sm input-group-homestead">
+              <input class="form-control input-homestead" type="text" placeholder="First name">
+              <div class="input-required"><span>*</span></div>
+            </div>
+            <div class="col-md-6 col-sm input-group-homestead">
+              <input class="form-control input-homestead" type="text" placeholder="Last name">
+              <div class="input-required"><span>*</span></div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-md-6 col-sm input-group-homestead">
+              <input class="form-control input-homestead" type="email" placeholder="Email">
+              <div class="input-required"><span>*</span></div>
+            </div>
+            <div class="col-md-6 col-sm input-group-homestead">
+              <input class="form-control input-homestead" type="text" placeholder="Job title">
+              <div class="input-required"><span>*</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- COMPANY INFORMATION -->
+        <div class="form-input-container">
+          <div class="row">
+            <div class="col-12 form-input-title">
+              <span>Company Information</span>
+            </div>
+          </div>
+
+          <!-- INPUT ROW 1 -->
+          <div class="row justify-content-center">
+            <div class="col-md-6 col-sm input-group-homestead">
+              <input class="form-control input-homestead" type="text" placeholder="Company name">
+              <div class="input-required"><span>*</span></div>
+            </div>
+            <div class="col-md-6 col-sm input-group-homestead">
+              <input class="form-control input-homestead" type="text" placeholder="Annual Revenue">
+              <div class="input-required"><span>*</span></div>
+            </div>
+          </div>
+
+
+          <!-- INPUT ROW 2 -->
+          <div class="row justify-content-center">
+            <div class="col-md-6 col-sm input-group-homestead">
+              <input class="form-control input-homestead" type="url" placeholder="Website URL">
+              <div class="input-required"><span>*</span></div>
+            </div>
+            <div class="col-md-6 col-sm input-group-homestead">
+              <input class="form-control input-homestead" type="text" placeholder="Average monthly spend?">
+              <div class="input-required"><span>*</span></div>
+            </div>
+          </div>
+
+          <!-- TEXTAREA SECTION -->
+          <div class="row justify-content-center">
+            <!-- TEXTAREA ROW 1 -->
+            <div class="col-md-12 col-sm input-group-homestead">
+              <textarea class="form-control textarea-homestead" rows="6" id="marketing-question-1"
+                placeholder="How did you hear about Homestead?"></textarea>
+              <div class="input-required"><span>*</span></div>
+            </div>
+
+            <!-- TEXTAREA ROW 2 -->
+            <div class="col-md-12 col-sm input-group-homestead">
+              <textarea class="form-control textarea-homestead" rows="5" id="marketing-question-2"
+                placeholder="What are you looking for in a growth marketing partner?"></textarea>
+              <div class="input-required"><span>*</span></div>
+            </div>
+
+
+          </div>
+        </div>
+        <!-- CHECKBOX SURVEY -->
+        <div class="form-input-container mb-4">
+          <div class="row input-group-homestead">
+            <div class="col-12">
+              <h3>What services are you interested in?</h3>
+            </div>
+            <div class="input-required"><span>*</span></div>
+          </div>
+
+          <!-- CHECKBOXES -->
+          <div class="row justify-content-center">
+
+            <!-- CHECKBOX 1 -->
+            <div class="col-md-12 col-sm input-group-homestead">
+              <div class="checkbox">
+                <input type="checkbox" value="" class="checkbox-homestead">
+              </div>
+              <label class="checkbox-label">Paid Social</label>
+            </div>
+
+            <!-- CHECKBOX 2 -->
+            <div class="col-md-12 col-sm input-group-homestead">
+              <div class="checkbox">
+                <input type="checkbox" value="" class="checkbox-homestead">
+              </div>
+              <label class="checkbox-label">Paid Search</label>
+            </div>
+
+            <!-- CHECKBOX 13 -->
+            <div class="col-md-12 col-sm input-group-homestead">
+              <div class="checkbox">
+                <input type="checkbox" value="" class="checkbox-homestead">
+              </div>
+              <label class="checkbox-label">Email/SMS</label>
+            </div>
+
+            <!-- CHECKBOX 4 -->
+            <div class="col-md-12 col-sm input-group-homestead">
+              <div class="checkbox">
+                <input type="checkbox" value="" class="checkbox-homestead">
+              </div>
+              <label class="checkbox-label">UGC</label>
+            </div>
+
+            <!-- CHECKBOX 5 -->
+            <div class="col-md-12 col-sm input-group-homestead">
+              <div class="checkbox">
+                <input type="checkbox" value="" class="checkbox-homestead">
+              </div>
+              <label class="checkbox-label">Landing Pages</label>
+            </div>
+
+
+
+
+          </div>
+        </div>
+        <!-- SUBMIT BUTTON -->
+        <div class="form-input-container">
+          <div class="row input-group-homestead">
+            <div class="col-12">
+
+              <button class="btn-homestead-contact">Submit <svg xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                </svg></button>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"></script>
 
 </body>
 
