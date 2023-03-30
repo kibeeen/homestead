@@ -580,7 +580,7 @@ h6 {
     border-radius: 5px;
     outline: none;
     background-color: #ffffff;
-    appearance: none;
+    appearance: checkbox;
     opacity: 1;
     min-width: 20px;
     min-height: 20px;
@@ -745,7 +745,7 @@ h6 {
     display: inline-block;
     border: 0;
     margin: 0;
-    padding: 10px 0 10px 10px;
+    padding: 10px 10px 10px 0;
   }
 
   .hamburger-box {
