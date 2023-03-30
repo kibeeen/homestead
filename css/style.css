@@ -504,6 +504,10 @@ h6 {
     line-height: 1.3em;
   }
 
+  .features-icon img {
+    height: 65px;
+  }
+
 
 
   /* PROCESS SECTION */
